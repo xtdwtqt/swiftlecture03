@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
    
-    @IBOutlet var touchview: UIView!
     
+    @IBOutlet weak var touchview: UIView!
     @IBOutlet weak var lbname: UILabel!
     
     

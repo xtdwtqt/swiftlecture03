@@ -55,7 +55,7 @@
                     </view>
                     <connections>
                         <outlet property="lbname" destination="NQp-ai-0jA" id="I6a-IC-hhg"/>
-                        <outlet property="touchview" destination="8bC-Xf-vdC" id="5Eg-Sw-nXK"/>
+                        <outlet property="touchview" destination="Vsb-cF-R3D" id="z2I-19-1Sj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
