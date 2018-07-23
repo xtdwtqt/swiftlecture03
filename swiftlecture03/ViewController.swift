@@ -10,11 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lbname: UILabel!
+    @IBOutlet weak var btnconfirm: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    
+    
+    
+    @IBAction func btnconfirmclicked(_ sender: Any) {
+        lbname.text="Chunli Zhang"
+    }
+    
 }
 
