@@ -31,7 +31,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ffc-Uf-kod"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="YES"/>
                                 <connections>
                                     <action selector="btnconfirmclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIg-AX-5mK"/>
                                 </connections>
