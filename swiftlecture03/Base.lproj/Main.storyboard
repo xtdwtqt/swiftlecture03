@@ -36,6 +36,11 @@
                                     <action selector="btnconfirmclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIg-AX-5mK"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vsb-cF-R3D">
+                                <rect key="frame" x="67" y="164" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -50,6 +55,7 @@
                     </view>
                     <connections>
                         <outlet property="lbname" destination="NQp-ai-0jA" id="I6a-IC-hhg"/>
+                        <outlet property="touchview" destination="8bC-Xf-vdC" id="5Eg-Sw-nXK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
