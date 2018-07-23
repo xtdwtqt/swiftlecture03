@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   
+    
     @IBOutlet weak var lbname: UILabel!
-    @IBOutlet weak var btnconfirm: UIButton!
     
     
     override func viewDidLoad() {
@@ -20,10 +21,13 @@ class ViewController: UIViewController {
     }
 
     
-    
-    
     @IBAction func btnconfirmclicked(_ sender: Any) {
         lbname.text="Chunli Zhang"
+        
+        
+        let button = sender as! UIButton ;
+        
+        button.setTitle("OK", for:  UIButton.State.normal)
     }
     
 }
