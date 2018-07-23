@@ -43,6 +43,7 @@ class ViewController: UIViewController {
    
     
     @IBAction func stepperchanged(_ sender: Any) {
+        lbname.text="\(Float( addscorestepper.value))"
         print("\(addscorestepper.value)")
         scoreslider.value =  Float( addscorestepper.value );
     }
