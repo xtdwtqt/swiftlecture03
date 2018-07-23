@@ -41,6 +41,9 @@ class ViewController: UIViewController {
     
     
    
+    @IBAction func switchstatus(_ sender: Any) {
+        addscorestepper.isEnabled = switchstatus.isOn
+    }
     
     @IBAction func stepperchanged(_ sender: Any) {
         lbname.text="\(Float( addscorestepper.value))"
