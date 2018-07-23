@@ -36,11 +36,21 @@
                                     <action selector="btnconfirmclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIg-AX-5mK"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vsb-cF-R3D">
-                                <rect key="frame" x="67" y="164" width="240" height="128"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9WI-An-a1v">
+                                <rect key="frame" x="221" y="293" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                                <connections>
+                                    <action selector="stepperchanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="kat-my-7Sw"/>
+                                </connections>
+                            </stepper>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ObO-Hr-EvL">
+                                <rect key="frame" x="14" y="236" width="347" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k4h-vX-jZj">
+                                <rect key="frame" x="16" y="140" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -54,8 +64,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addscorestepper" destination="9WI-An-a1v" id="scj-TL-qrk"/>
                         <outlet property="lbname" destination="NQp-ai-0jA" id="I6a-IC-hhg"/>
-                        <outlet property="touchview" destination="Vsb-cF-R3D" id="z2I-19-1Sj"/>
+                        <outlet property="scoreslider" destination="ObO-Hr-EvL" id="250-lT-fab"/>
+                        <outlet property="switchstatus" destination="k4h-vX-jZj" id="iu4-0G-sot"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
